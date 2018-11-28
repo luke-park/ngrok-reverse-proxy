@@ -1,0 +1,7 @@
+:60001 {
+	tls off
+	proxy / https://host.docker.internal:44333 {
+		insecure_skip_verify
+		header_upstream Host localhost:44333
+	}
+}
