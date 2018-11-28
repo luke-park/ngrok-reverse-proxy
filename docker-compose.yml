@@ -3,3 +3,5 @@ services:
 
     caddy:
       build: .
+      ports:
+        - "60001:60001"
